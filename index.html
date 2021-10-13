@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>الحديث الشريف</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="icon" href="icon32.png" type="image/png" sizes="32x32">
+
+</head>
+
+<body>
+    <div id="page">
+        <button id="print" onclick="outputHadeeth()">طباعة</button>
+        <div id="pageLeftSide">
+            <form id="hadeethForm">
+                <div id="prophetSection">
+                    <input name="quotedBy" type="text" id="quotedBy" form="hadeethForm" onchange="getQuotedBy(this.value)">
+                    <h3 id="quotedByValue"></h3>
+                    <input name="prophet" type="text" id="prophet" form="hadeethForm" onchange="getProphetStatment(this.value)">
+                    <h3 id="prophetValue"></h3>
+                </div>
+                <div id="hadeethSection">
+                    <textarea id="AlHadeeth" form="hadeethForm" onchange="getAlHadeeth(this.value)">    </textarea>
+                    <pre> 
+                    <h2 id="AlHadeethValue"></h2>
+                    </pre>
+                </div>
+                <div id="sourceSection">
+                    <input name="source" type="text" id="source" form="hadeethForm" onchange="getSource(this.value)">
+                    <h3 id="sourceValue"></h3>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <script type=" text/javascript " src="scripts.js"></script>
+    <script src="unpkg/html2canvas.js"></script>
+</body>
+
+</html>
