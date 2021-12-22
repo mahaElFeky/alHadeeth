@@ -2,6 +2,7 @@ html,
 body {
     width: 700px;
     height: 600px;
+    direction: rtl;
 }
 
 h3,
@@ -16,6 +17,7 @@ h2 {
 input,
 textarea {
     direction: rtl;
+    unicode-bidi: embed;
 }
 
 input {
@@ -26,7 +28,10 @@ input {
 textarea {
     width: 270px;
     height: 295px;
-    margin: 10px 10px 12px 0;
+    margin: 10px 12px;
+    text-align: justify;
+    text-indent: 0%;
+    text-justify: inter-word;
 }
 
 button {
@@ -56,6 +61,7 @@ button:hover {
 
 #pageLeftSide {
     position: absolute;
+    right: 300px;
     width: 400px;
     height: 500px;
     text-align: center;
@@ -80,6 +86,11 @@ button:hover {
     background-image: url(frame.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#AlHadeethValue {
+    margin: 2%;
+    padding: 20px 40px;
 }
 
 button {

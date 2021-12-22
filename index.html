@@ -13,7 +13,6 @@
 
 <body>
     <div id="page">
-        <button id="print" onclick="outputHadeeth()">طباعة</button>
         <div id="pageLeftSide">
             <form id="hadeethForm">
                 <div id="prophetSection">
@@ -24,9 +23,9 @@
                 </div>
                 <div id="hadeethSection">
                     <textarea id="AlHadeeth" form="hadeethForm" onchange="getAlHadeeth(this.value)">    </textarea>
-                    <pre> 
+
                     <h2 id="AlHadeethValue"></h2>
-                    </pre>
+
                 </div>
                 <div id="sourceSection">
                     <input name="source" type="text" id="source" form="hadeethForm" onchange="getSource(this.value)">
@@ -35,10 +34,16 @@
             </form>
 
         </div>
+        <button id="print" onclick="outputHadeeth()">طباعة</button>
+
+
 
     </div>
+    <!-- <button id="download" onclick="downloadjpg()">download</button> -->
     <script type=" text/javascript " src="scripts.js"></script>
     <script src="unpkg/html2canvas.js"></script>
 </body>
 
 </html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/unicode-bidi -->
