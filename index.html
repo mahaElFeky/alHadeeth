@@ -17,15 +17,7 @@
 </head>
 
 <body>
-   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+  
 <!-- Your share button code -->
 <div class="fb-share-button" 
 data-href="https://alhadeeth.netlify.app/" 
@@ -35,8 +27,6 @@ data-layout="button_count">
     <div id="page">
         <div id="pageLeftSide">
             <form id="hadeethForm">
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Falhadeeth.netlify.app%2F&width=138&layout=button&action=like&size=large&share=true&height=65&appId" width="138" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-<!--                 <div class="fb-share-button" data-href="https://alhadeeth.netlify.app/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falhadeeth.netlify.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div> -->
                 <div id="prophetSection">
                     <input name="quotedBy" type="text" id="quotedBy" form="hadeethForm" onchange="getQuotedBy(this.value)">
                     <h3 id="quotedByValue"></h3>
@@ -62,9 +52,18 @@ data-layout="button_count">
 
     </div>
     <!-- <button id="download" onclick="downloadjpg()">download</button> -->
-<!--   <div class="fb-share-button" data-href="https://alhadeeth.netlify.app/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Falhadeeth.netlify.app%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div> -->
     <script type=" text/javascript " src="scripts.js"></script>
     <script src="unpkg/html2canvas.js"></script>
+    
+    
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 </body>
 
 </html>
