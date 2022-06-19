@@ -51,7 +51,9 @@ button:hover {
     background-color: rgb(247, 247, 247);
     color: #62281b;
 }
-
+#whatsApp{
+left: 90%;
+}
 #page {
     position: relative;
     width: 700px;
